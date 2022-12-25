@@ -1,13 +1,261 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Poppins:ital,wght@0,500;1,600&display=swap');
+*{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+.mainApp{
+  width: 1500px;
+  margin: auto;
+}
+ header{
+  position: fixed;
+  top: 0;
+  
+  display: flex;
+  width: 1500px;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: black;
+}
+header i {
+  font-size: 35px;
+  cursor: pointer;
+}
+header h1::first-letter{
+  color: green;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+header h1{
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.products{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+ 
+ 
+  
+}
+.products .product{
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid #cce7d0;
+  border-radius: 8%;
+  margin-top: 10px;
+  
+
+
+}
+.products .product img{
+  width: 250px;
+  height: 230px;
+}
+.products .product .text h2{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top: 6px;
+  margin-bottom: 0;
+  
+}
+.products .product .text h5{
+  color: green;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.products .product .text h4{
+  color:#e3910d;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
+  
+}
+.products .product .text .icon{
+  float: right;
+  color: #088178;
+  background-color: whitesmoke;
+  border-radius: 60%;
+  font-size: 22px;
+  padding: 2px 8px;
+  cursor: pointer;
+  transition: 100ms;
+}
+.products .product .text .icon:hover{
+  transform: scale(1.1);
+}
+.stars{
+  color: gold;
+}
+
+td, th {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.banner{
+  width: 100%;
+  height: 40vh;
+  background-image: url("./components/images/b22.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+ 
+
+
+}
+.banner h1{
+  color: white;
+  font-weight: 600;
+  font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+.pay{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.footer{
+  background-color: whitesmoke;
+  padding: 70px 0;
+  margin-top: 150px;
+  border-top: 1px solid gainsboro;
+}
+.footer-col{
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: black;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col p{
+    color: rgb(119, 119, 119);
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #088178 ;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer ul{
+  list-style: none;
+}
+.footer-col ul li {
+  font-size: 16px;
+  text-transform: capitalize;
+ 
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+ 
+  text-decoration: none;
+  font-weight: 300;
+  color: rgb(119, 119, 119);
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+  color: black;
+  padding-left: 8px;
+  font-weight: 600;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255,255,255,0.2);
+  margin:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: rgb(119, 119, 119);
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+  color: #cce7d0;
+  background-color: #088178 ;
+}
+@media(max-width:1600px){
+  .mainApp{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+}
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}}
+.shake{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1.2s;
+
+  /* When the animation is finished, start again */
+  
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

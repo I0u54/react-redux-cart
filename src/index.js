@@ -3,11 +3,46 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import productsReducer from './slices/productsSlice'
+import cartReducer from './slices/cartSlice'
+import Shop from './components/shop';
+import Cart from './components/cart';
+import Header from './components/header';
+
+import Footer from './components/footer';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+const store = configureStore({
+  reducer:{products:productsReducer,cart:cartReducer}
+
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
-    <App />
+   
+    <Provider store={store}>
+    <BrowserRouter>
+    <div className='mainApp'>
+    <Header/>
+    
+    <Routes>
+    
+      <Route path='/' element={<Shop/>}/>
+      <Route path='/cart' element={<Cart/>}/>
+
+    </Routes>
+    <Footer/>
+    </div>
+   
+    </BrowserRouter>
+     
+  
+    </Provider>
+ 
   </React.StrictMode>
 );
 
