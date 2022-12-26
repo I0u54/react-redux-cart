@@ -7,10 +7,16 @@ export default function Cart(){
     let dispatch = useDispatch()
     let cart = useSelector((state)=>state.cart.cart)
     let data = useSelector((state)=>state.products.products)
+    let status = useSelector((state)=>state.products.status)
+
     let [total,setTotal] = useState(0)
     useEffect(()=>{
         localStorage.setItem('cart',JSON.stringify(cart))
-        dispatch(fetchProducts())
+        if(status=='idle'){
+            dispatch(fetchProducts())
+
+        }
+      
         let t = 0
          
       

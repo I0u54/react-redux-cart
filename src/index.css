@@ -143,7 +143,7 @@ td, th {
 .footer{
   background-color: whitesmoke;
   padding: 70px 0;
-  margin-top: 150px;
+  margin-top: 25px;
   border-top: 1px solid gainsboro;
 }
 .footer-col{
@@ -220,6 +220,69 @@ td, th {
   color: #cce7d0;
   background-color: #088178 ;
 }
+.productDetails{
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+ 
+ 
+  width: 80%;
+  margin: auto;
+
+
+}
+.productDetails .productImage  {
+  width: 40%;
+  
+}
+.productDetails .productImage img{
+  border-radius: 5px;
+  width: 100%;
+}
+.productDetails .productText{
+  margin-left: 35px;
+  width: 60%;
+  margin-top: 20px;
+
+} 
+.productDetails .productText h2::first-letter{
+  text-transform: uppercase;
+  
+  
+}
+.productDetails .productText h1{
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 10px;
+   
+ }
+.productDetails .productText h2{
+ font-weight: 600;
+ font-size: 27px;
+ margin-bottom: 10px;
+  
+}
+.productDetails .productText h3{
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: green;
+   
+   
+ }
+ .productDetails .productText h4{
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #e3910d;
+   
+   
+ }
+ .productDetails .productText button{
+  background-color: #088178;
+  margin-bottom: 10px;
+
+ }
 @media(max-width:1600px){
   .mainApp{
     width: 100%;

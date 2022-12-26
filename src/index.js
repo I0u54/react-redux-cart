@@ -7,14 +7,16 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import productsReducer from './slices/productsSlice'
 import cartReducer from './slices/cartSlice'
+import productReducer from './slices/productSlice'
 import Shop from './components/shop';
 import Cart from './components/cart';
 import Header from './components/header';
 
 import Footer from './components/footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Product from './components/productDetails';
 const store = configureStore({
-  reducer:{products:productsReducer,cart:cartReducer}
+  reducer:{products:productsReducer,cart:cartReducer,product:productReducer}
 
 })
 
@@ -33,6 +35,7 @@ root.render(
     
       <Route path='/' element={<Shop/>}/>
       <Route path='/cart' element={<Cart/>}/>
+      <Route path='/productDetails/:id' element={<Product/>}/>
 
     </Routes>
     <Footer/>

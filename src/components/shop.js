@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react'
 import {useSelector,useDispatch} from 'react-redux'
 import { fetchProducts } from '../slices/productsSlice'
 import { addToCart,increment } from '../slices/cartSlice'
+import { Link } from 'react-router-dom'
 export default function Shop(){
     let dispatch = useDispatch()
     let cart = useSelector((state)=>state.cart.cart)
     let data = useSelector((state)=>state.products.products)
     let status = useSelector((state)=>state.products.status)
-    let error = useSelector((state)=>state.products.err)
+
 
    
     useEffect(()=>{
@@ -62,17 +63,21 @@ export default function Shop(){
     }
     return(
         <div className="container" style={{marginTop:"70px"}}>
-        { status =="loading" ? <h1>Loading...</h1> :
+        { status !="secceded" ? <h1>Loading...</h1> :
         <div className="products">
             {data.map((d)=>(
+              
+                    
                  <div className="product">
-                 <img src={require(`./images/${d.image}`)} alt="" />
+                   <Link to={`/productDetails/${d.id}`}><img src={require(`./images/${d.image}`)} alt="" /></Link>
                  <div className="text">
                      <h2>{d.title}</h2>
-                     <h5>{d.quantity} en stock</h5>
+                     {d.quantity > 0 ? <h5>{d.quantity} en stock</h5> :<h5 style={{color:'red'}}>Out of stock</h5>}
+                    
                      
                      <h4>{d.prix} MAD</h4>
-                     <span className="icon" onClick={()=>{adc(d.id)}}><i className="bi bi-cart"></i></span>
+                     {d.quantity > 0 ?  <span className="icon" onClick={()=>{adc(d.id)}}><i className="bi bi-cart"></i></span>:<span className="icon"><i className="bi bi-eye"></i></span>}
+                    
                      <div className="stars">
                          <i className="bi bi-star-fill"></i>
                          <i className="bi bi-star-fill"></i>
