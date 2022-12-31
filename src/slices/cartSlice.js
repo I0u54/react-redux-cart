@@ -1,4 +1,5 @@
-import {createSlice} from '@reduxjs/toolkit'
+import {createSlice,createAsyncThunk} from '@reduxjs/toolkit'
+import axios from 'axios'
 let shake = ()=>{
     let icon = document.querySelector('.sh')
     icon.classList.add('shake')
@@ -7,6 +8,9 @@ let shake = ()=>{
 
     },1200)
 }
+export let postOrder = createAsyncThunk('order/postOrder',async(data)=>{
+    await axios.post('http://localhost:8000/orders',data)
+})
 const cartSlice = createSlice({
     name:"cart",
     initialState:{cart: localStorage.getItem('cart')!= undefined ? JSON.parse(localStorage.getItem('cart')) : []},
@@ -64,6 +68,8 @@ const cartSlice = createSlice({
               state.cart=ncart
               shake()
 
+        }, cartClear:(state)=>{
+            state.cart=[]
         }
         
         
@@ -72,4 +78,4 @@ const cartSlice = createSlice({
 
 })
 export default cartSlice.reducer
-export const {addToCart,increment,deleteFromCart,decrement} = cartSlice.actions
+export const {addToCart,increment,deleteFromCart,decrement,cartClear} = cartSlice.actions

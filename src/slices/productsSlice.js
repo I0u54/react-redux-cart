@@ -1,9 +1,17 @@
 import {createSlice,createAsyncThunk} from "@reduxjs/toolkit"
 import axios from "axios"
+
 export let fetchProducts = createAsyncThunk('products/fetchProducts',async ()=>{
    let reponse = await axios.get('http://localhost:8000/products')
    return [...reponse.data]
 })
+export let updateProduct = createAsyncThunk('products/updateProduct',async (data)=>{
+    let id  =data.id
+     await axios.put('http://localhost:8000/products/'+id,data)
+  
+
+    
+ })
 
 const productsSlice = createSlice({
     name:'products',
@@ -13,6 +21,10 @@ const productsSlice = createSlice({
         err:null
     },
     reducers:{
+        setStatus:(state)=>{
+            state.status='idle'
+
+        }
         
 
     },
@@ -33,3 +45,4 @@ const productsSlice = createSlice({
 
 })
 export default productsSlice.reducer
+export const{setStatus} = productsSlice.actions

@@ -1,90 +1,207 @@
 {
-    "products": [
-      {
-        "id": 1,
-        "title": "T-shirt turtles",
-        "quantity": 0,
-        "prix": 120,
-        "image": "a1.jpg"
-      },
-      {
-        "id": 2,
-        "title": "T-shirt rose.n.guns",
-        "quantity": 7,
-        "prix": 120,
-        "image": "a2.jpg"
-      },
-      {
-        "id": 3,
-        "title": "T-shirt holister",
-        "quantity": 9,
-        "prix": 120,
-        "image": "a3.jpg"
-      },
-      {
-        "id": 4,
-        "title": "T-shirt AC&DC",
-        "quantity": 3,
-        "prix": 120,
-        "image": "a4.jpg"
-      },
-      {
-        "id": 5,
-        "title": "T-shirt jack daniels",
-        "quantity": 10,
-        "prix": 120,
-        "image": "a5.jpg"
-      },
-      {
-        "id": 6,
-        "title": "T-shirt popeye",
-        "quantity": 7,
-        "prix": 120,
-        "image": "a6.jpg"
-      },
-      {
-        "id": 7,
-        "title": "T-shirt led zepplen",
-        "quantity": 9,
-        "prix": 120,
-        "image": "a7.jpg"
-      },
-      {
-        "id": 8,
-        "title": "T-shirt simpsons",
-        "quantity": 3,
-        "prix": 120,
-        "image": "a8.jpg"
-      },
-       {
-        "id": 9,
-        "title": "T-shirt Marvel",
-        "quantity": 10,
-        "prix": 120,
-        "image": "a9.jpg"
-      },
-      {
-        "id": 10,
-        "title": "T-shirt Jordan",
-        "quantity": 7,
-        "prix": 120,
-        "image": "a10.jpg"
-      },
-      {
-        "id": 11,
-        "title": "T-shirt Metalica",
-        "quantity": 9,
-        "prix": 120,
-        "image": "a11.jpg"
-      },
-      {
-        "id": 12,
-        "title": "Jean Jacket",
-        "quantity": 3,
-        "prix": 400,
-        "image": "a15.jpg"
-      }
-    
-    ]
-   
-  }
+  "products": [
+    {
+      "id": 1,
+      "title": "T-shirt turtles",
+      "quantity": 99,
+      "prix": 120,
+      "image": "a1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "T-shirt rose.n.guns",
+      "quantity": 100,
+      "prix": 120,
+      "image": "a2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "T-shirt holister",
+      "quantity": 96,
+      "prix": 120,
+      "image": "a3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "T-shirt AC&DC",
+      "quantity": 96,
+      "prix": 120,
+      "image": "a4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "T-shirt jack daniels",
+      "quantity": 99,
+      "prix": 120,
+      "image": "a5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "T-shirt popeye",
+      "quantity": 100,
+      "prix": 120,
+      "image": "a6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "T-shirt led zepplen",
+      "quantity": 100,
+      "prix": 120,
+      "image": "a7.jpg"
+    },
+    {
+      "id": 8,
+      "title": "T-shirt simpsons",
+      "quantity": 100,
+      "prix": 120,
+      "image": "a8.jpg"
+    },
+    {
+      "id": 9,
+      "title": "T-shirt Marvel",
+      "quantity": 99,
+      "prix": 120,
+      "image": "a9.jpg"
+    },
+    {
+      "id": 10,
+      "title": "T-shirt Jordan",
+      "quantity": 99,
+      "prix": 120,
+      "image": "a10.jpg"
+    },
+    {
+      "id": 11,
+      "title": "T-shirt Metalica",
+      "quantity": 100,
+      "prix": 120,
+      "image": "a11.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Jean Jacket",
+      "quantity": 99,
+      "prix": 400,
+      "image": "a15.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "nom": "tahiri",
+      "prenom": "ismail",
+      "emailAd": "ismailtahiri2002@gmail.com",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n782",
+      "prds": [
+        {
+          "id": 10,
+          "title": "T-shirt Jordan",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a10.jpg"
+        },
+        {
+          "id": 9,
+          "title": "T-shirt Marvel",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a9.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Jean Jacket",
+          "prix": 400,
+          "quantity": 1,
+          "image": "a15.jpg"
+        },
+        {
+          "id": 1,
+          "title": "T-shirt turtles",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a1.jpg"
+        }
+      ],
+      "total": 790,
+      "id": 1
+    },
+    {
+      "nom": "tahiri",
+      "prenom": "ismail",
+      "emailAd": "ismailtahiri2002@gmail.com",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
+      "prds": [
+        {
+          "id": 3,
+          "title": "T-shirt holister",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "T-shirt AC&DC",
+          "prix": 120,
+          "quantity": 2,
+          "image": "a4.jpg"
+        }
+      ],
+      "total": 390,
+      "id": 2
+    },
+    {
+      "nom": "tahiri",
+      "prenom": "ismail",
+      "emailAd": "ismailtahiri2002@gmail.com",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
+      "prds": [
+        {
+          "id": 3,
+          "title": "T-shirt holister",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "T-shirt AC&DC",
+          "prix": 120,
+          "quantity": 2,
+          "image": "a4.jpg"
+        }
+      ],
+      "total": 390,
+      "id": 3
+    },
+    {
+      "nom": "tahiri",
+      "prenom": "ismail",
+      "emailAd": "ismailtahiri2002@gmail.com",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
+      "prds": [
+        {
+          "id": 3,
+          "title": "T-shirt holister",
+          "prix": 120,
+          "quantity": 2,
+          "image": "a3.jpg"
+        },
+        {
+          "id": 4,
+          "title": "T-shirt AC&DC",
+          "prix": 120,
+          "quantity": 2,
+          "image": "a4.jpg"
+        },
+        {
+          "id": 5,
+          "title": "T-shirt jack daniels",
+          "prix": 120,
+          "quantity": 1,
+          "image": "a5.jpg"
+        }
+      ],
+      "total": 630,
+      "id": 4
+    }
+  ]
+}
