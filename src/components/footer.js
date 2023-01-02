@@ -25,16 +25,16 @@ export default function Footer(){
 Rabat.</li>
   	 				
 					<li><i className="bi bi-send-fill"></i>&nbsp;&nbsp;ismailtahiri2002@gmail.com</li>
-					<li><i className="bi bi-telephone-fill"></i>&nbsp;&nbsp;212652400275,&nbsp;212661643882</li>
+					<li><i className="bi bi-telephone-fill"></i>&nbsp;&nbsp;212652400275,&nbsp;212665385722</li>
 				</ul>
   	 		</div>
   	 		<div className="footer-col">
   	 			<h4>follow us</h4>
   	 			<div className="social-links">
-  	 				<a href="#"><i className="fab fa-facebook-f"></i></a>
-  	 				<a href="#"><i className="fab fa-twitter"></i></a>
-  	 				<a href="#"><i className="fab fa-instagram"></i></a>
-  	 				<a href="#"><i className="fab fa-linkedin-in"></i></a>
+  	 				<a href="https://www.facebook.com/ismail.thr.58" target="_blank" rel="noreferrer" ><i className="fab fa-facebook-f"></i></a>
+  	 				<a href="https://twitter.com/IsmailTahiri5" target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a>
+  	 				<a href="https://www.instagram.com/is0u54" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+  	 				<a href="https://github.com/I0u54" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
   	 			</div>
   	 		</div>
   	 	</div>

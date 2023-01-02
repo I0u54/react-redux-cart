@@ -5,6 +5,7 @@ import {deleteFromCart,increment,decrement,cartClear} from '../slices/cartSlice'
 import { postOrder } from "../slices/cartSlice" 
 import { updateProduct,setStatus } from "../slices/productsSlice"
 
+
 export default function Cart(){
    
     let dispatch = useDispatch()
@@ -125,7 +126,7 @@ export default function Cart(){
 
     }
     return(
-        <>
+        <div className="container" style={{marginTop:'70px'}}>
         <div className="alert alert-success alert-dismissible fade show mt-4" role="alert">
         <strong>Bien!</strong> vous avez passer une commande .
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -197,14 +198,14 @@ export default function Cart(){
   <div className="row mb-4">
     <div className="col">
       <div className="form-outline">
-      <label className="form-label" for="form3Example1">Nom</label>
+      <label className="form-label" htmlFor="form3Example1">Nom</label>
         <input type="text" id="form3Example1" className="form-control"  onChange={(e)=>{setName(e.target.value)}} />
        
       </div>
     </div>
     <div className="col">
       <div className="form-outline">
-        <label className="form-label" for="form3Example2" >Prenom </label>
+        <label className="form-label" htmlFor="form3Example2" >Prenom </label>
         <input type="text" id="form3Example2" className="form-control"  onChange={(e)=>{setLastName(e.target.value)}}/>
        
       </div>
@@ -213,7 +214,7 @@ export default function Cart(){
 
 
   <div className="form-outline mb-4">
-  <label className="form-label" for="form3Example3" >Email </label>
+  <label className="form-label" htmlFor="form3Example3" >Email </label>
     <input type="email" id="form3Example3" className="form-control"  onChange={(e)=>{setEmail(e.target.value)}} />
    
   </div>
@@ -221,7 +222,7 @@ export default function Cart(){
 
   <div className="form-outline mb-4">
   <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label" >Adress</label>
+  <label htmlFor="exampleFormControlTextarea1" class="form-label" >Adress</label>
   <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" onChange={(e)=>{setAdress(e.target.value)}}></textarea>
 </div>
   </div>
@@ -235,9 +236,9 @@ export default function Cart(){
 
 
 </form>
-            </div> ) :<h1 className="text-center mt-3 ">le panier est vide </h1>}
+            </div> ) :<h1 className="text-center text-uppercase mt-5 mb-5">le panier est vide </h1>}
            
-        </>
+        </div>
        
     )
 }

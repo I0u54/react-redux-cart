@@ -3,28 +3,28 @@
     {
       "id": 1,
       "title": "T-shirt turtles",
-      "quantity": 99,
+      "quantity": 94,
       "prix": 120,
       "image": "a1.jpg"
     },
     {
       "id": 2,
       "title": "T-shirt rose.n.guns",
-      "quantity": 100,
+      "quantity": 96,
       "prix": 120,
       "image": "a2.jpg"
     },
     {
       "id": 3,
       "title": "T-shirt holister",
-      "quantity": 96,
+      "quantity": 95,
       "prix": 120,
       "image": "a3.jpg"
     },
     {
       "id": 4,
       "title": "T-shirt AC&DC",
-      "quantity": 96,
+      "quantity": 94,
       "prix": 120,
       "image": "a4.jpg"
     },
@@ -38,7 +38,7 @@
     {
       "id": 6,
       "title": "T-shirt popeye",
-      "quantity": 100,
+      "quantity": 97,
       "prix": 120,
       "image": "a6.jpg"
     },
@@ -73,16 +73,72 @@
     {
       "id": 11,
       "title": "T-shirt Metalica",
-      "quantity": 100,
+      "quantity": 98,
       "prix": 120,
       "image": "a11.jpg"
     },
     {
       "id": 12,
       "title": "Jean Jacket",
-      "quantity": 99,
+      "quantity": 96,
       "prix": 400,
       "image": "a15.jpg"
+    },
+    {
+      "id": 13,
+      "title": "jacket levis",
+      "quantity": 98,
+      "prix": 800,
+      "image": "a16.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Veste originale armée allemande🇩🇪",
+      "quantity": 99,
+      "prix": 720,
+      "image": "a17.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Shoes Zara",
+      "quantity": 99,
+      "prix": 320,
+      "image": "a18.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Shoes Dr.Martens🇺🇸 ",
+      "quantity": 97,
+      "prix": 1400,
+      "image": "a19.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Shoes Dr.Martens🇺🇸 red",
+      "quantity": 99,
+      "prix": 1200,
+      "image": "a20.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Jacket Polo Ralph Lauren",
+      "quantity": 98,
+      "prix": 1300,
+      "image": "a12.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Shoes Dr.Martens🇺🇸",
+      "quantity": 99,
+      "prix": 720,
+      "image": "a24.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Jacket Tommy Hilfiger",
+      "quantity": 88,
+      "prix": 900,
+      "image": "a13.jpg"
     }
   ],
   "orders": [
@@ -90,21 +146,14 @@
       "nom": "tahiri",
       "prenom": "ismail",
       "emailAd": "ismailtahiri2002@gmail.com",
-      "adress": "temara hay al maghirb al arabi rue tarabluss n782",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n 782",
       "prds": [
         {
-          "id": 10,
-          "title": "T-shirt Jordan",
-          "prix": 120,
-          "quantity": 1,
-          "image": "a10.jpg"
-        },
-        {
-          "id": 9,
-          "title": "T-shirt Marvel",
-          "prix": 120,
-          "quantity": 1,
-          "image": "a9.jpg"
+          "id": 20,
+          "title": "Jacket Tommy Hilfiger",
+          "prix": 900,
+          "quantity": 8,
+          "image": "a13.jpg"
         },
         {
           "id": 12,
@@ -114,94 +163,63 @@
           "image": "a15.jpg"
         },
         {
-          "id": 1,
-          "title": "T-shirt turtles",
+          "id": 4,
+          "title": "T-shirt AC&DC",
           "prix": 120,
           "quantity": 1,
-          "image": "a1.jpg"
+          "image": "a4.jpg"
         }
       ],
-      "total": 790,
+      "total": 7750,
       "id": 1
     },
     {
       "nom": "tahiri",
       "prenom": "ismail",
       "emailAd": "ismailtahiri2002@gmail.com",
-      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
+      "adress": "temara hay al maghirb al arabi rue tarabluss n 782",
       "prds": [
         {
-          "id": 3,
-          "title": "T-shirt holister",
-          "prix": 120,
+          "id": 18,
+          "title": "Jacket Polo Ralph Lauren",
+          "prix": 1300,
           "quantity": 1,
-          "image": "a3.jpg"
+          "image": "a12.jpg"
         },
         {
-          "id": 4,
-          "title": "T-shirt AC&DC",
+          "id": 13,
+          "title": "jacket levis",
+          "prix": 800,
+          "quantity": 1,
+          "image": "a16.jpg"
+        },
+        {
+          "id": 2,
+          "title": "T-shirt rose.n.guns",
           "prix": 120,
-          "quantity": 2,
-          "image": "a4.jpg"
+          "quantity": 1,
+          "image": "a2.jpg"
         }
       ],
-      "total": 390,
+      "total": 2250,
       "id": 2
     },
     {
       "nom": "tahiri",
       "prenom": "ismail",
       "emailAd": "ismailtahiri2002@gmail.com",
-      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
+      "adress": "this is just a test",
       "prds": [
         {
-          "id": 3,
-          "title": "T-shirt holister",
-          "prix": 120,
+          "id": 20,
+          "title": "Jacket Tommy Hilfiger",
+          "prix": 900,
           "quantity": 1,
-          "image": "a3.jpg"
-        },
-        {
-          "id": 4,
-          "title": "T-shirt AC&DC",
-          "prix": 120,
-          "quantity": 2,
-          "image": "a4.jpg"
+          "image": "a13.jpg"
         }
       ],
-      "total": 390,
+      "total": 930,
       "id": 3
-    },
-    {
-      "nom": "tahiri",
-      "prenom": "ismail",
-      "emailAd": "ismailtahiri2002@gmail.com",
-      "adress": "temara hay al maghirb al arabi rue tarabluss n782 ",
-      "prds": [
-        {
-          "id": 3,
-          "title": "T-shirt holister",
-          "prix": 120,
-          "quantity": 2,
-          "image": "a3.jpg"
-        },
-        {
-          "id": 4,
-          "title": "T-shirt AC&DC",
-          "prix": 120,
-          "quantity": 2,
-          "image": "a4.jpg"
-        },
-        {
-          "id": 5,
-          "title": "T-shirt jack daniels",
-          "prix": 120,
-          "quantity": 1,
-          "image": "a5.jpg"
-        }
-      ],
-      "total": 630,
-      "id": 4
     }
   ]
 }

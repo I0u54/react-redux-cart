@@ -11,10 +11,13 @@ import productReducer from './slices/productSlice'
 import Shop from './components/shop';
 import Cart from './components/cart';
 import Header from './components/header';
+import Eror from './components/notFound';
 
 import Footer from './components/footer';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Product from './components/productDetails';
+import Search from './components/search';
+import Home from './components/home';
 const store = configureStore({
   reducer:{products:productsReducer,cart:cartReducer,product:productReducer}
 
@@ -32,10 +35,12 @@ root.render(
     <Header/>
     
     <Routes>
-    
-      <Route path='/' element={<Shop/>}/>
+      <Route path='*' element={<Eror/>}/>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/filter' element={<Search/>}/>
       <Route path='/cart' element={<Cart/>}/>
       <Route path='/productDetails/:id' element={<Product/>}/>
+      
 
     </Routes>
     <Footer/>

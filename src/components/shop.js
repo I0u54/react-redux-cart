@@ -1,23 +1,19 @@
 import { useEffect, useState } from 'react'
 import {useSelector,useDispatch} from 'react-redux'
-import { fetchProducts } from '../slices/productsSlice'
+
 import { addToCart,increment } from '../slices/cartSlice'
 import { Link } from 'react-router-dom'
-export default function Shop(){
+export default function Shop({c,d,s}){
     let dispatch = useDispatch()
-    let cart = useSelector((state)=>state.cart.cart)
-    let data = useSelector((state)=>state.products.products)
-    let status = useSelector((state)=>state.products.status)
+    
+    let cart =c
+    let data = d
+    let status = s
 
 
    
-    useEffect(()=>{
-        if(status=='idle'){
-            dispatch(fetchProducts())
-        }
-        localStorage.setItem('cart',JSON.stringify(cart))
-
-    },[status,dispatch,cart])
+    
+    
     let adc = (id)=>{
         let f = false
         data.map((d)=>{
@@ -62,10 +58,13 @@ export default function Shop(){
 
     }
     return(
-        <div className="container" style={{marginTop:"70px"}}>
+        <div className="container">
         { status !="secceded" ? <h1>Loading...</h1> :
+        <>
+        
+       
         <div className="products">
-            {data.map((d)=>(
+            {data.slice(0,12).map((d)=>(
               
                     
                  <div className="product">
@@ -88,7 +87,7 @@ export default function Shop(){
                  </div>
              </div>
             ))}
-        </div> 
+        </div></>
         }
 
         </div>
