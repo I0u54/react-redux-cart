@@ -47,7 +47,7 @@ const cartSlice = createSlice({
         decrement:(state,action)=>{
             let ncart = state.cart.map((c)=>{
                 if(c.id == action.payload){
-                    if(c.quantity >0){
+                    if(c.quantity >1){
                         let updatedItem = {
                             ...c,
                             quantity:c.quantity-=1
